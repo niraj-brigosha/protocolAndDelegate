@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FI3-2o-Fme">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ueZ-m6-0EY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -9,24 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="2e7-lV-nhK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DJM-5N-7sr" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="krU-pp-Rth">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="FI3-2o-Fme" kind="relationship" relationship="rootViewController" id="a56-rr-QpQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R26-mv-9hY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="97.767857142857139"/>
-        </scene>
         <!--ViewController-->
         <scene sceneID="hPV-7f-dBs">
             <objects>
@@ -49,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Fill form"/>
                                 <connections>
-                                    <action selector="goToForm:" destination="FI3-2o-Fme" eventType="touchUpInside" id="ibB-E9-5dn"/>
+                                    <action selector="goToForm:" destination="FI3-2o-Fme" eventType="touchUpInside" id="GGb-Ex-4e6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTr-Hp-Sr8">
@@ -74,14 +56,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="View Controller" id="Wo4-rX-GpY"/>
                     <connections>
-                        <outlet property="lblAddress" destination="IoA-SV-JyW" id="hEf-BY-mwJ"/>
-                        <outlet property="lblName" destination="pTr-Hp-Sr8" id="5BD-Ax-anl"/>
-                        <outlet property="lblPhone" destination="QDf-8q-YAu" id="8SG-YL-D00"/>
+                        <outlet property="lblAddress" destination="IoA-SV-JyW" id="iqe-Y3-q4e"/>
+                        <outlet property="lblName" destination="pTr-Hp-Sr8" id="ufm-4O-jOg"/>
+                        <outlet property="lblPhone" destination="QDf-8q-YAu" id="vZu-fa-z67"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd3-X2-JIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2771.0144927536235" y="97.767857142857139"/>
+            <point key="canvasLocation" x="3681.1594202898555" y="97.767857142857139"/>
         </scene>
         <!--SecondViewController-->
         <scene sceneID="jjo-FP-M7q">
@@ -111,7 +93,7 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="saveButtonClicked:" destination="BkR-5V-8L9" eventType="touchUpInside" id="kf2-Hf-TdT"/>
+                                    <action selector="saveButtonClicked:" destination="BkR-5V-8L9" eventType="touchUpInside" id="Gdj-cl-0Sw"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EfL-VW-fOb">
@@ -126,14 +108,32 @@
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="txtAddress" destination="oqO-5J-MCP" id="vMa-6b-sAk"/>
-                        <outlet property="txtName" destination="EfL-VW-fOb" id="tVl-mP-rPo"/>
-                        <outlet property="txtPhone" destination="4v2-KH-rng" id="Jyv-Uf-lmx"/>
+                        <outlet property="txtAddress" destination="oqO-5J-MCP" id="ezb-xM-6cK"/>
+                        <outlet property="txtName" destination="EfL-VW-fOb" id="9R8-4O-Ui1"/>
+                        <outlet property="txtPhone" destination="4v2-KH-rng" id="c78-6Z-K73"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ohc-p7-rau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3628.985507246377" y="97.767857142857139"/>
+            <point key="canvasLocation" x="4539.130434782609" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZJZ-mg-WhL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ueZ-m6-0EY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vnQ-Pv-pCl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FI3-2o-Fme" kind="relationship" relationship="rootViewController" id="Jlm-jc-Di8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyF-VG-Thv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771.0144927536235" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
